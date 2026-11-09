@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 15px;
+    color: #263b50;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #263b50;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 50%;
+    border: 1px solid #cbd3dc;
+    background-color: white;
+    align-items: center;
+}
+
+.form-header {
+    background-color: #edf4fc;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #cbd3dc;
+}
+
+.form-group {
+    padding: 10px 12px;
+    border-bottom: 1px solid #dce1e6;
+    font-size: 13px;
+}
+
+.form-group > label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #222;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 200px;
+    padding: 4px;
+    border: none;
+    border-bottom: 1px solid #9da8b2;
+    outline: none;
+    font-size: 13px;
+}
+
+input[type="file"] {
+    font-size: 13px;
+    color: #555;
+}
+
+select {
+    width: 185px;
+    padding: 4px;
+    border: none;
+    font-size: 13px;
+    color: #555;
+    background-color: white;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+small {
+    display: block;
+    margin-top: 5px;
+    font-size: 11px;
+    color: #666;
+}
+
+.form-buttons {
+    padding: 12px;
+}
+
+button {
+    border: none;
+    background: none;
+    color: #2863bd;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    font-weight: bold;
+}
+
+button[type="reset"] {
+    color: #333;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #cbd3dc;
+    padding: 10px;
+    text-align: left;
+    font-size: 13px;
+}
+
+th {
+    background-color: #edf4fc;
+    color: #263b50;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.product-image {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        margin: 10px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+}
